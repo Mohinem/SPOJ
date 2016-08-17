@@ -20,7 +20,7 @@ void bfs()
             cout<<T.first<<endl;
             return;
         }
-        if (!visited[x%N])
+        if (!visited[x%N]) // cutting the branches with same remainder ..!
         {
             visited[x]=1;
             Q.push({T.first+'0',(10*x)%N});
